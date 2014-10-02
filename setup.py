@@ -10,15 +10,16 @@ packages = ['Django<=1.6',
             # 'mysql-connector-python',
             # 'pymongo',
             # 'psycopg2',
+            'wagtail',
            ]
 
 if 'REDISCLOUD_URL' in os.environ and 'REDISCLOUD_PORT' in os.environ and 'REDISCLOUD_PASSWORD' in os.environ:
      packages.append('django-redis-cache')
      packages.append('hiredis')
 
-setup(name='YourAppName', version='1.0',
+setup(name='Blog', version='1.0',
       description='OpenShift Python-3.3 / Django-1.6 Community Cartridge based application',
-      author='Your Name', author_email='admin@example.org',
+      author='Akinwale Oshodi', author_email='akoshodi@gmail.com',
       url='https://pypi.python.org/pypi',
       install_requires=packages,
      )
