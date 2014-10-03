@@ -125,7 +125,7 @@ if ON_OPENSHIFT:
     #         'ENGINE': 'django.db.backends.sqlite3',
     #         'NAME': os.path.join(os.environ['OPENSHIFT_DATA_DIR'], 'db.sqlite3'),
     #     }
-    }
+    # }
 else:
     DATABASES = {
         'default': {
