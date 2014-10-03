@@ -10,7 +10,7 @@ packages = ['Django<=1.6',
             # 'mysql-connector-python',
             # 'pymongo',
             # 'psycopg2',
-            'wagtail',
+            # 'wagtail',
            ]
 
 if 'REDISCLOUD_URL' in os.environ and 'REDISCLOUD_PORT' in os.environ and 'REDISCLOUD_PASSWORD' in os.environ:
