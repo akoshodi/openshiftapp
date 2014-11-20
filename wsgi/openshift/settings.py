@@ -132,10 +132,20 @@ if ON_OPENSHIFT:
 else:
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'testdb.sqlite3'),
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'akoshodi',
+            'USER': 'akoshodi',
+            'PASSWORD': 'abc123',
+            'HOST': '',  # Set to empty string for localhost.
+            'PORT': '',  # Set to empty string for default.
         }
     }
+    # DATABASES = {
+    #     'default': {
+    #         'ENGINE': 'django.db.backends.sqlite3',
+    #         'NAME': os.path.join(BASE_DIR, 'testdb.sqlite3'),
+    #     }
+    # }
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
