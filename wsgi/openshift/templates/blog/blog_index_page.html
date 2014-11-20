@@ -9,8 +9,12 @@
         {% for rl in self.related_links.all %}
             <!-- <p>{{ rl.title }}: <a href='{{ rl.link_page.url }}'>{{ rl.link_page }}</a></p> -->
             <p><a href='{{ rl.link_page.url }}'>{{ rl.link_page }}</a></p>
-            <p>{{ rl.body }}</p>
+            <p>{{ rl.intro }}</p>
         {% endfor %}
+
+
+
+
 
 
 {% endblock %}
