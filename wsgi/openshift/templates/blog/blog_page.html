@@ -1,0 +1,12 @@
+{% extends "blog/base.html" %}
+{% load wagtailcore_tags static %}
+
+{% block content %}
+
+<p><img src="{% static "img/user.png" %} " width="50px" height="50px">  <ba>Stanley Stinson</ba></p>
+    Date: {{ self.date }}
+<h1>{{ self.title }}</h1>
+	
+    {{ self.body | richtext }}
+
+{% endblock %}

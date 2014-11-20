@@ -30,6 +30,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'views.home', name='home'),
+    url(r'^blogtemplate/$', 'views.blog', name='blog'),
     # url(r'^$', 'openshift.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
     
